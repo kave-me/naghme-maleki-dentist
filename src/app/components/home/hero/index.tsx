@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section className={"flex flex-col  items-center rtl pt-12"}>
       <div className="flex">
         <div className={"max-w-[60%]"}>
-          <h1 className={"text-[64px] font-black text-secondary"}>
+          <h1 className={"text-[64px] font-semibold text-secondary"}>
             <span className={"text-primary font-light"}>دندان زیبا</span> با ما،
             <span className={"text-primary font-light"}>
               <br />
@@ -51,7 +51,9 @@ export default function HeroSection() {
                 <div className="size-12 bg-gray-900 rounded-xl p-1 flex justify-center items-center">
                   {c.icon}
                 </div>
-                <p>{c.description}</p>
+                <p className={"text-secondary font-medium text-[16px]"}>
+                  {c.description}
+                </p>
               </Link>
             </li>
           ))}
