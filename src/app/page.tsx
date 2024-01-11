@@ -1,8 +1,13 @@
-import Image from 'next/image'
-import {Navbar} from '@/app/components/navbar/Navbar';
+import AboutMeSection from '@/app/components/home/about-me';
+import HeroSection from '@/app/components/home/hero';
+import ServicesSection from '@/app/components/home/services';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
-  )
+    return (
+      <main className="flex min-h-screen flex-col  justify-start flex-nowrap items-stretch max-w-5xl px-5 mx-auto ">
+          <HeroSection/>
+          <ServicesSection/>
+          <AboutMeSection/>
+      </main>
+    )
 }
