@@ -1,10 +1,10 @@
 import type {Metadata} from 'next'
 import {Vazirmatn} from 'next/font/google'
 import './globals.css'
-import {Navbar} from '@/app/components/navbar/Navbar';
+import {Navbar} from '@/app/components/navbar';
 import {Footer} from '@/app/components/footer';
 
-const vazir = Vazirmatn({subsets: ['latin']})
+const vazir = Vazirmatn({subsets:['latin']})
 
 export const metadata: Metadata = {
     title: 'دکتر نغمه مالکی',

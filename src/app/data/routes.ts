@@ -20,7 +20,7 @@ export const routesData: RouteData[] = [
     {
         name: 'about me',
         name_fa: 'درباره‌من',
-        path: 'about_me',
+        path: 'about',
         meta: {
             title: 'دکتر نغمه مالکی',
             description: 'خدمات تخصصی دندانپزکشی دکتر نغمه مالکی',
@@ -29,7 +29,7 @@ export const routesData: RouteData[] = [
     {
         name: 'contact me',
         name_fa: 'تماس با من',
-        path: 'contact_me',
+        path: 'contact',
         meta: {
             title: 'دکتر نغمه مالکی',
             description: 'خدمات تخصصی دندانپزکشی دکتر نغمه مالکی',
