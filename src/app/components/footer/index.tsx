@@ -1,6 +1,7 @@
 export function Footer() {
   return (
-    <div className="grid grid-cols-3 gap-4 ">
+    <section className={"flex flex-col  items-center rtl pt-32"}>
+      <div className="grid grid-cols-3 gap-4 ">
       <div className="flex justify-center">
         <div className="text-right">
           <p className="mt-4 flex align-middle" dir="rtl">
@@ -101,5 +102,6 @@ export function Footer() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

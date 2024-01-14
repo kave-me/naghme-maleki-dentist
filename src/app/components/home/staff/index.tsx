@@ -15,7 +15,7 @@ export default function StaffSection() {
             }
           >
             <div className="staff-image-holder">
-              <Image width="100" height="100" src={s.profile_picture} alt="" />
+              <Image width="100" height="100" src={s.profile_picture || ''} alt="" />
             </div>
             <h3 className={"text-xl font-bold text-secondary "}>
              { `${s.firstname}
