@@ -49,6 +49,7 @@ interface Testimony {
     author: Person;
     rate: number;
     comment: string;
+    profile_picture?:string,
 }
 
 export const testimonials: Testimony[] = [
@@ -58,6 +59,49 @@ export const testimonials: Testimony[] = [
             lastname: '',
         },
         rate: 5,
-        comment: 'comment'
+        comment: 'comment',
+        profile_picture:'',
+    }
+]
+export const comments:Testimony[] = [
+    {
+        author: {
+            firstname:'امین',
+            lastname:'امینی'
+        },
+        rate:4,
+        comment: 'محیط عالی و پرسنل بسیار خوش برخوردی دارن، هر کسی که نیاز به مراقبت دندان داره پیشنهاد میکنم.',
+        profile_picture: '/image/clientimg/23.png'
+    },
+    {
+        author: {
+            firstname:'هستی',
+            lastname:'امینی'
+        },
+        rate:3,
+        comment: 'خیلی راضی هستم، ایشون بسیار حرفه ای و مهربان هستن... خیلی ممنونم دکتر مالکی',
+        profile_picture: '/image/clientimg/22.png'
+    },
+    {
+        
+        author: {
+            firstname:'آرین',
+            lastname:'امینی'
+        },
+        rate:5,
+        comment: 'با دندونای جدیدم خیلی بیشتر لبخند میزنم.',
+        profile_picture: '/image/clientimg/24.png'
+
+    },
+    {
+        
+        author: {
+            firstname:'امین',
+            lastname:'امینی'
+        },
+        rate:5,
+        comment: 'محیط عالی و پرسنل بسیار خوش برخوردی دارن، هر کسی که نیاز به مراقبت دندان داره پیشنهاد میکنم.',
+        profile_picture: '/image/staffimg/1.png'
+
     }
 ]
