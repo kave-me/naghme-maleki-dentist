@@ -7,7 +7,7 @@ import Testimonials from "./components/home/testimonial";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col  justify-start flex-nowrap items-stretch max-w-5xl px-5 mx-auto ">
+    <main className="flex min-h-screen flex-col  justify-start flex-nowrap items-stretch max-w-[1920px] px-5 mx-auto ">
       <HeroSection />
       <ServicesSection />
       <AboutMeSection />
