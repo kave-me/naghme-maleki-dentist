@@ -1,26 +1,43 @@
+"use client"
 import { SectionHeader } from "@/app/components/SectionHeader";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 import Image from "next/image";
 import { comments } from "@/app/data/people";
+import 'swiper/css';
+
 
 export default function Testimonials() {
   return (
-    <section className={"flex flex-col  items-center rtl pt-32 bg-[#0F2650] "}>
+    <section className={" items-center rtl p-12 bg-[#0F2650] mt-32"}>
       <SectionHeader
         name={"نظرات شما"}
         category={"آنچه در مورد من گفتید"}
         darkmode
       />
 
-      <div className="grid gap-6 text-center md:grid-cols-3 lg:gap-12 items-center p-4">
-        {comments.map((c) => (
+
+<Swiper
+      slidesPerView={3}
+      spaceBetween={30}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination]}
+      className="mySwiper "
+    >
+       {comments.map((c) => (
+        <SwiperSlide  key={c.author.firstname}>
           <div
-            key={c.author.firstname}
+            
             className="size-60 mb-12 md:mb-0 bg-white  border-primary-light border rounded-3xl p-2"
           >
             <div className="mb-0">
               <div className="">
                 <Image
+             
                   width="50"
                   height="50"
                   src={c.profile_picture || ""}
@@ -48,9 +65,9 @@ export default function Testimonials() {
                       }`}
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </li>
@@ -58,8 +75,11 @@ export default function Testimonials() {
               </ul>
             </div>
           </div>
+          </SwiperSlide>
         ))}
-      </div>
+        </Swiper>
+  
+      
     </section>
   );
 }
