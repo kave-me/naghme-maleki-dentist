@@ -7,10 +7,10 @@ import { ownerData } from "@/app/data/people";
 export default function AboutMeSection() {
   return (
     <section className={"flex flex-col  items-center rtl py-16 bg-secondary  "}>
-      <h4 className={"text-primary text-[32px] font-extrabold"}>درباره من</h4>
-      <article className={"flex"}>
+      <SectionHeader name={"درباره من"} category={"من کی هستم"} darkmode />
+      <article className={"flex mt-4"}>
         <div>
-          <h2 className={"text-2xl font-semibold"}>من کی هستم؟</h2>
+          {/*<h2 className={"text-2xl font-semibold"}>من کی هستم؟</h2>*/}
           <p>{description}</p>
         </div>
         <Image
