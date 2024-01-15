@@ -1,3 +1,5 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 interface Person {
     firstname: string;
     lastname: string;
@@ -20,24 +22,24 @@ export const staffData: Person[] = [
     {
         firstname: 'امیر', lastname: 'محمدزاده',
         occupation: 'جراح - دندانپزشک',
-        profile_picture: '/path/to/image.png'
+        profile_picture: '/image/staffimg/1.png'
     },
     {
         firstname: 'سحر', lastname: 'ملک‌زاده',
         occupation: 'دستیار ',
-        profile_picture: '/path/to/image.png'
+        profile_picture: '/image/staffimg/2.png'
     },
     {
         firstname: 'رضا', lastname: 'ناصری',
         occupation: 'ایمپلنت و لمینت',
-        profile_picture: '/path/to/image.png'
+        profile_picture: '/image/staffimg/4.png'
 
 
     },
     {
         firstname: 'مریم', lastname: 'محمدی',
         occupation: 'ارتودنسی',
-        profile_picture: '/path/to/image.png'
+        profile_picture: '/image/staffimg/5.png'
 
 
     }

@@ -1,0 +1,24 @@
+.staff-holder-0{
+    background:white;
+  
+}
+.staff-holder-0:hover{
+    background: linear-gradient(90deg, #0F2650 17.18%, rgba(15, 38, 80, 0.81) 85.05%);
+  
+}
+.staff-holder-0:hover h3{
+    color: white;
+}
+.staff-holder-0:hover p{
+    color: #01CFC9;
+}
+.staff-image-holder{
+   
+    background-color: #BEF2F0;
+    border-radius: 15px;
+width: 100px;
+margin: auto;
+margin-top: -60px;
+}
+
+
