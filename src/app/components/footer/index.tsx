@@ -1,18 +1,42 @@
+import FooterImage from "../../../../public/image/Group6.png";
+import Image from "next/image";
 export function Footer() {
   return (
     <section className={"flex flex-col  items-center rtl pt-32"}>
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-3 gap-4 items-center">
+      <div className="flex justify-center">
+        <div className="text-right">
+          <h4><span className="text-[#0F2650] font-extrabold">NAGHME</span><span className="text-[#01CFC9] font-extrabold">MALEKI</span></h4>
+          <p className="w-2/3 mt-2">
+          پنج سال است که بهترین خودمان را برای لبخند زیبای شما گذاشته‌ایم.
+          </p>
+          <p className="mt-4 text-[#0F2650] ">
+            <strong >
+            تمام حقوق نزد نغمه مالکی محفوظ است.
+            </strong>
+          </p>
+        </div>
+      </div>
+      
+      <div className="flex justify-center">
+      <Image
+         width='220'
+         height='220'
+          src={FooterImage}
+          alt={``}
+        />
+      </div>
       <div className="flex justify-center">
         <div className="text-right">
           <p className="mt-4 flex align-middle" dir="rtl">
-          <span className="inline-block">
+          <span className="inline-block ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="#01CFC9"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 stroke-cyan-500"
+                className="w-4 h-4 stroke-[#0F2650]"
               >
                 <path
                   strokeLinecap="round"
@@ -21,19 +45,19 @@ export function Footer() {
                 />
               </svg>
             </span>
-            <span>
+            <span className='text-sm ltr'>
                 021 852 2365
             </span>
           </p>
           <p className="mt-4 flex align-middle" dir="rtl">
-            <span className="inline-block">
+            <span className="inline-block ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="#01CFC9"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 stroke-cyan-500"
+                className="w-4 h-4 stroke-[#0F2650]"
               >
                 <path
                   strokeLinecap="round"
@@ -42,19 +66,19 @@ export function Footer() {
                 />
               </svg>
             </span>
-            <span>
+            <span  className='text-sm ltr'>
                 0911 345 2121
             </span>
           </p>
           <p className="mt-4 flex align-middle" dir="rtl">
-            <span className="inline-block">
+            <span className="inline-block ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="#01CFC9"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 stroke-cyan-500"
+                className='w-4 h-4 stroke-[#0F2650]'
               >
                 <path
                   strokeLinecap="round"
@@ -63,17 +87,17 @@ export function Footer() {
                 />
               </svg>
             </span>
-            <span>یکشنبه و چهارشنبه ۹ تا ۱۶</span>
+            <span  className='text-sm ltr'>یکشنبه و چهارشنبه ۹ تا ۱۶</span>
           </p>
           <p className="mt-4 flex align-middle" dir="rtl">
-            <span className="inline-block">
+            <span className="inline-block ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="#01CFC9"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 stroke-cyan-500"
+                className="w-4 h-4 stroke-[#0F2650]"
               >
                 <path
                   strokeLinecap="round"
@@ -87,17 +111,7 @@ export function Footer() {
                 />
               </svg>
             </span>
-            <span>خیرآباد - میدان امام خمینی جنب نواب صفوی- پلاک ۳۱</span>
-          </p>
-        </div>
-      </div>
-      <div className=""></div>
-      <div className="flex justify-center">
-        <div className="text-right">
-          <h4>NAGHMEMALEKI</h4>
-          <p>لورم ایپسوم دولور سیت امیت</p>
-          <p className="mt-4">
-            <strong>لورم ایپسوم دولور سیت امیت</strong>
+            <span  className='text-sm ltr'>خیرآباد - میدان امام خمینی جنب نواب صفوی- پلاک ۳۱</span>
           </p>
         </div>
       </div>
