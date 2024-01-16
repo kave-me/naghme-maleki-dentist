@@ -20,18 +20,28 @@ export default function Testimonials() {
 
 
 <Swiper
-      slidesPerView={3}
+      slidesPerView={1}
       spaceBetween={30}
       pagination={{
         clickable: true,
       }}
       modules={[Pagination]}
       className="mySwiper "
+      breakpoints={{
+        640: {
+          slidesPerView: 1, // Show 1 slide per view on screens wider than 640px
+        },
+        768: {
+          slidesPerView: 2, // Show 2 slides per view on screens wider than 768px
+        },
+        1024: {
+          slidesPerView: 3, // Show 3 slides per view on screens wider than 1024px
+        },
+      }}
     >
        {comments.map((c) => (
-        <SwiperSlide  key={c.author.firstname}>
+        <SwiperSlide  key={c.author.firstname} className="mb-5">
           <div
-            
             className="size-60 mb-12 md:mb-0 bg-white  border-primary-light border rounded-3xl p-2"
           >
             <div className="mb-0">
@@ -40,7 +50,7 @@ export default function Testimonials() {
              
                   width="50"
                   height="50"
-                  src={c.profile_picture || ""}
+                  src={c.author.profile_picture || ""}
                   alt=""
                   className="mx-auto"
                 />
