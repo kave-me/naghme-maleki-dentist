@@ -3,7 +3,7 @@ import {Vazirmatn} from 'next/font/google'
 import './globals.css'
 import {Navbar} from '@/app/components/navbar';
 import {Footer} from '@/app/components/footer';
-
+import './globals.css'
 const vazir = Vazirmatn({subsets:['latin']})
 
 export const metadata: Metadata = {

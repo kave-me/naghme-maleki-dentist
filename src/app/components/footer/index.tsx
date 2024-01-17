@@ -2,15 +2,15 @@ import FooterImage from "../../../../public/image/Group6.png";
 import Image from "next/image";
 export function Footer() {
   return (
-    <section className={"flex flex-col  items-center rtl pt-32"}>
-      <div className="grid grid-cols-3 gap-4 items-center">
-      <div className="flex justify-center">
-        <div className="text-right">
-          <h4><span className="text-[#0F2650] font-extrabold">NAGHME</span><span className="text-[#01CFC9] font-extrabold">MALEKI</span></h4>
-          <p className="w-2/3 mt-2">
+    <section className={"flex flex-col lg:flex-row  items-end rtl mt-32 max-w-5xl px-5 mx-auto"}>
+      
+      <div className="flex justify-center basis-1/3">
+        <div>
+          <h4 className='text-center md:text-right'><span className="text-[#0F2650] font-extrabold">NAGHME</span><span className="text-[#01CFC9] font-extrabold">MALEKI</span></h4>
+          <p className="text-center md:text-right md:w-2/3 mt-2">
           پنج سال است که بهترین خودمان را برای لبخند زیبای شما گذاشته‌ایم.
           </p>
-          <p className="mt-4 text-[#0F2650] ">
+          <p className="text-center md:text-right mt-4 text-[#0F2650] ">
             <strong >
             تمام حقوق نزد نغمه مالکی محفوظ است.
             </strong>
@@ -18,7 +18,7 @@ export function Footer() {
         </div>
       </div>
       
-      <div className="flex justify-center">
+      <div className="flex justify-center basis-1/3">
       <Image
          width='220'
          height='220'
@@ -26,7 +26,7 @@ export function Footer() {
           alt={``}
         />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center basis-1/3">
         <div className="text-right">
           <p className="mt-4 flex align-middle" dir="rtl">
           <span className="inline-block ml-2">
@@ -49,7 +49,7 @@ export function Footer() {
                 021 852 2365
             </span>
           </p>
-          <p className="mt-4 flex align-middle" dir="rtl">
+          <p className="mt-4 flex align-middle rtl" >
             <span className="inline-block ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export function Footer() {
                 0911 345 2121
             </span>
           </p>
-          <p className="mt-4 flex align-middle" dir="rtl">
+          <p className="mt-4 flex align-middle rtl" >
             <span className="inline-block ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ export function Footer() {
             </span>
             <span  className='text-sm ltr'>یکشنبه و چهارشنبه ۹ تا ۱۶</span>
           </p>
-          <p className="mt-4 flex align-middle" dir="rtl">
+          <p className="mt-4 flex align-middle rtl" >
             <span className="inline-block ml-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ export function Footer() {
           </p>
         </div>
       </div>
-    </div>
+    
     </section>
   );
 }

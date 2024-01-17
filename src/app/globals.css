@@ -7,7 +7,20 @@
     --background-rgb: 238, 251, 250;
 }
 
+.swiper{
+    padding: 30px !important;
+   
+  }
+  .swiper-pagination-bullet {
+    
+    background: white !important;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1) !important;
+}
 
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #01CFC9 !important;
+}
 /*TODO: add dark color pallet*/
 /*@media (prefers-color-scheme: dark) {*/
 /*  :root {*/
