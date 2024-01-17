@@ -12,9 +12,9 @@ export function SectionHeader({
 }: SectionHeaderProps) {
   return (
     <>
-      <h4 className={"text-primary text-[32px] font-extrabold "}>{name}</h4>
+      <h4 className={"text-primary text-[32px] font-extrabold text-center"}>{name}</h4>
       <h2
-        className={`font-bold  text-[48px] ${
+        className={`text-center font-bold  text-[48px] ${
           darkmode ? "text-[#F6F9FD]" : "text-secondary"
         } `}
       >
