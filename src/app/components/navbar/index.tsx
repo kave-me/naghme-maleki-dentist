@@ -4,15 +4,16 @@ import { routesData } from "@/app/data/routes";
 import Link from "next/link";
 
 export const Navbar = () => {
+  //   TODO: add hamburger button to navbar as nav list toggle
   return (
-    <nav className="h-[49px]  flex flex-row-reverse justify-start max-w-5xl mx-auto px-4 items-center">
+    <nav className="h-[49px]  flex flex-row-reverse justify-start max-w-5xl mx-auto px-1 md:px-4 my-3 items-center">
       <div className={"font-black text-[30px]"}>
         <Link href={"/"}>
           <span>{ownerData.firstname}</span>{" "}
           <span className={"text-primary"}>{ownerData.lastname}</span>
         </Link>
       </div>
-      <ol className=" flex flex-row-reverse gap-8 text-[18px] mr-4 ml-auto">
+      <ol className=" md:flex flex-row-reverse gap-8 text-[18px] mr-4 hidden text-black/70">
         {routesData.map((r) => (
           <li key={r.name}>
             <Link href={r.path}>{r.name_fa}</Link>
@@ -21,7 +22,7 @@ export const Navbar = () => {
       </ol>
       <button
         className={
-          "h-12 w-32 rounded-xl bg-gradient-to-r from-[#0F2650] to-[#0F2650]/70   text-[18px] text-teal-400"
+          "h-12 w-32 rounded-xl bg-gradient-to-r from-[#0F2650] to-[#0F2650]/70   text-[18px] text-teal-400 mr-auto"
         }
       >
         تماس

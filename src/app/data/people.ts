@@ -52,56 +52,50 @@ interface Testimony {
     profile_picture?:string,
 }
 
-export const testimonials: Testimony[] = [
-    {
-        author: {
-            firstname: '',
-            lastname: '',
-        },
-        rate: 5,
-        comment: 'comment',
-        profile_picture:'',
-    }
-]
+
 export const comments:Testimony[] = [
     {
         author: {
             firstname:'امین',
-            lastname:'امینی'
+            lastname:'امینی',
+            profile_picture: '/image/clientimg/23.png'
         },
         rate:4,
         comment: 'محیط عالی و پرسنل بسیار خوش برخوردی دارن، هر کسی که نیاز به مراقبت دندان داره پیشنهاد میکنم.',
-        profile_picture: '/image/clientimg/23.png'
+       
     },
     {
         author: {
             firstname:'هستی',
-            lastname:'امینی'
+            lastname:'امینی',
+            profile_picture: '/image/clientimg/22.png'
         },
         rate:3,
         comment: 'خیلی راضی هستم، ایشون بسیار حرفه ای و مهربان هستن... خیلی ممنونم دکتر مالکی',
-        profile_picture: '/image/clientimg/22.png'
+        
     },
     {
         
         author: {
             firstname:'آرین',
-            lastname:'امینی'
+            lastname:'امینی',
+            profile_picture: '/image/clientimg/24.png'
         },
         rate:5,
         comment: 'با دندونای جدیدم خیلی بیشتر لبخند میزنم.',
-        profile_picture: '/image/clientimg/24.png'
+        
 
     },
     {
         
         author: {
             firstname:'امین',
-            lastname:'امینی'
+            lastname:'امینی',
+            profile_picture: '/image/staffimg/1.png'
         },
         rate:5,
         comment: 'محیط عالی و پرسنل بسیار خوش برخوردی دارن، هر کسی که نیاز به مراقبت دندان داره پیشنهاد میکنم.',
-        profile_picture: '/image/staffimg/1.png'
+        
 
     }
 ]
